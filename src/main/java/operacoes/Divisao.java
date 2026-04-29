@@ -1,10 +1,12 @@
 package operacoes;
-import java.util.Scanner;
+import entradaNumeros.EntradaNumeros;
+
+
 public class Divisao {
-    static void main() {
-        Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
-        int y = scanner.nextInt();
-        System.out.println(x/y);
+    public static void main(String[] args) {
+        EntradaNumeros entradaNumeros = new EntradaNumeros();
+        entradaNumeros.lerNumeros();
+
+        System.out.println(entradaNumeros.x/entradaNumeros.y);
     }
 }
